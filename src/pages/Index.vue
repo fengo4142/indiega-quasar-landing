@@ -1865,4 +1865,13 @@ export default {
 .row {
   display: block;
 }
+.main-slider {
+  position: relative;
+}
+.bg-white {
+  background: transparent !important;
+}
+.tab-img {
+  height: 612px;
+}
 </style>

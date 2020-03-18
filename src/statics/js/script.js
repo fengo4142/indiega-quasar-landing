@@ -14,7 +14,7 @@
 				
 			$preloader.find( '.cssload-loader' ).fadeOut();
 			$preloader.delay( 350 ).fadeOut( 'slow' );
-		} );
+		});
 		
  	/*----------------------------------------------------*/
 	/* Adaptive Menu Width
@@ -155,111 +155,115 @@
 	/*----------------------------------------------------*/
 	/* Sliders Settings
 	/*----------------------------------------------------*/
-	$( '.tabs-slider' ).slick( {
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
-		nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
-		responsive: [{
-			breakpoint: 1120,
-			settings: {
-				autoplay: true
-			}
-		},
-			{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3
-			}
-		},
+	winObj.on( 'load', function()
 		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1
-			}
-		}
-	]
-	} );
+				$( '.testimonial-slider' ).slick( {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					autoplay: true,
+					arrows: true,
+					infinite: true,
+					dots: true,
+					prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
+					nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
+					adaptiveHeight: true,
+					responsive: [{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 1
+						}
+					}
+				]
+				} );
+			$( '.tabs-slider' ).slick( {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				arrows: true,
+				prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
+				nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
+				responsive: [{
+					breakpoint: 1120,
+					settings: {
+						autoplay: true
+					}
+				},
+					{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+			} );
 
-	$('.tabs-slider').on( 'click', 'li', function() {
-		$( this ).addClass( 'active' );
-		if( $( this ).hasClass( 'active' ) ) {
-			$('.tabs-slider li').removeClass( 'active' );
-		}
-	} );
+			$('.tabs-slider').on( 'click', 'li', function() {
+				$( this ).addClass( 'active' );
+				if( $( this ).hasClass( 'active' ) ) {
+					$('.tabs-slider li').removeClass( 'active' );
+				}
+			} );
 
-	$( '.testimonial-slider' ).slick( {
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: true,
-		infinite: true,
-		dots: true,
-		prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
-		nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
-		adaptiveHeight: true,
-		responsive: [{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 1
-			}
-		}
-	]
-	} );
 
-	$( '.game-img-slider' ).slick( {
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: true,
-		infinite: true,
-		dots: false,
-		prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
-		nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
-		adaptiveHeight: true,
-		responsive: [{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 2
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1
-			}
-		}
-	]
-	} );
+			$( '.game-img-slider' ).slick( {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+				arrows: true,
+				infinite: true,
+				dots: false,
+				prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
+				nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>',
+				adaptiveHeight: true,
+				responsive: [{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+			} );
 
-	$( '.top-slider-bl' ).slick( {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: true,
-		infinite: true,
-		dots: false,
-		prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
-		nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>'
-	} );
+			$( '.top-slider-bl' ).slick( {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				arrows: true,
+				infinite: true,
+				dots: false,
+				prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
+				nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>'
+			} );
 
-	$( '.post-slider' ).slick( {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: false,
-		infinite: true,
-		dots: true,
-		prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
-		nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>'
-	} );
+			$( '.post-slider' ).slick( {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				arrows: false,
+				infinite: true,
+				dots: true,
+				prevArrow: '<i class="fa fa-angle-left slick-arrow"></i>',
+				nextArrow: '<i class="fa fa-angle-right slick-arrow"></i>'
+			} );
+	})
+
 
 	/*----------------------------------------------------*/
 	/* LightBox Initialize
@@ -623,7 +627,7 @@
 				map: map,
 				title: 'INDIEGA',
 				animation: google.maps.Animation.DROP,
-				icon: '../assets/images/marker.png'
+				icon: 'statics/images/marker.png'
 			} );
 
 			// Marker animation
