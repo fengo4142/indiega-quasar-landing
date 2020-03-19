@@ -1,3 +1,24 @@
 // app global css in SCSS form
 @import "custom/loader.scss";
 @import "custom/slider.scss";
+@import "custom/header.scss";
+@import "custom/responsive.scss";
+
+.q-tab--active .q-tab__indicator {
+  opacity: 0 !important;
+}
+.container {
+  width: 1220px;
+  margin: auto;
+}
+.item-wrap .q-btn__content {
+  background: #292845 !important;
+}
+
+
+
+@font-face {
+  font-family: 'Agency Fb';
+  src: url("../statics/fonts/agency/agency-fb.ttf");
+  font-weight: 400;
+  font-style: normal; }
