@@ -1,5 +1,5 @@
 <template>
-  <section class="gallery main-gallery ptb150">
+  <q-page class="gallery main-gallery ptb150">
     <div class="row flex-center container">
       <div class="col-12 q-px-md">
         <div class="title-bl text-center wow fadeIn" data-wow-duration="2s">
@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </q-page>
 </template>
 
 <script>

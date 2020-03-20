@@ -18,7 +18,7 @@
                   <div class="date">Mar 18-20, 2018</div>
                 </div>
               </q-tab>
-              <q-tab name="tab2" class="col text-center">
+              <q-tab name="tab2" class="gt-xs col text-center">
                 <div class="img-wrap">
                   <img src="statics/images/game-img-2.jpg" alt />
                 </div>
@@ -27,7 +27,7 @@
                   <div class="date">Apr 25-27, 2018</div>
                 </div>
               </q-tab>
-              <q-tab name="tab3" class="col text-center">
+              <q-tab name="tab3" class="gt-sm col text-center">
                 <div class="img-wrap">
                   <img src="statics/images/game-img-3.jpg" alt />
                 </div>
@@ -36,7 +36,7 @@
                   <div class="date">Mar 11, 2019</div>
                 </div>
               </q-tab>
-              <q-tab name="tab4" class="col text-center">
+              <q-tab name="tab4" class="gt-md col text-center">
                 <div class="img-wrap">
                   <img src="statics/images/game-img-4.jpg" alt />
                 </div>
@@ -76,12 +76,9 @@
                 </div>
                 <div class="mt60 table g-bottom">
                   <div class="table-cell valign-middle q-mr-md">
-                    <q-btn
-                      to="single-game.html"
-                      class="btn gradient color-white plr60 ptb19"
-                    >Read more</q-btn>
+                    <q-btn to="single-game.html" class="btn gradient color-white">Read more</q-btn>
                   </div>
-                  <div class="q-pl-xl rating table-cell valign-middle text-right">
+                  <div class="q-pl-lg rating table-cell valign-middle text-right">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -124,13 +121,10 @@
                   </p>
                 </div>
                 <div class="mt60 table g-bottom">
-                  <div class="table-cell valign-middle">
-                    <q-btn
-                      to="single-game.html"
-                      class="btn gradient color-white plr60 ptb19"
-                    >Read more</q-btn>
+                  <div class="table-cell valign-middle q-mr-md">
+                    <q-btn to="single-game.html" class="btn gradient color-white">Read more</q-btn>
                   </div>
-                  <div class="q-pl-xl rating table-cell valign-middle text-right">
+                  <div class="q-pl-lg rating table-cell valign-middle text-right">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -173,12 +167,9 @@
                 </div>
                 <div class="mt60 table g-bottom">
                   <div class="table-cell valign-middle">
-                    <q-btn
-                      to="single-game.html"
-                      class="btn gradient color-white plr60 ptb19"
-                    >Read more</q-btn>
+                    <q-btn to="single-game.html" class="btn gradient color-white">Read more</q-btn>
                   </div>
-                  <div class="q-pl-xl rating table-cell valign-middle text-right width-100">
+                  <div class="q-pl-lg rating table-cell valign-middle text-right width-100">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -221,12 +212,9 @@
                 </div>
                 <div class="mt60 table g-bottom">
                   <div class="table-cell valign-middle">
-                    <q-btn
-                      to="single-game.html"
-                      class="btn gradient color-white plr60 ptb19"
-                    >Read more</q-btn>
+                    <q-btn to="single-game.html" class="btn gradient color-white">Read more</q-btn>
                   </div>
-                  <div class="q-pl-xl rating table-cell valign-middle text-right">
+                  <div class="q-pl-lg rating table-cell valign-middle text-right">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -261,7 +249,8 @@ export default {
 
 <style scoped>
 .btn {
-  min-width: 250px;
+  min-width: 150px;
+  padding: 10px 20px;
 }
 .q-panel-parent {
   overflow: initial;

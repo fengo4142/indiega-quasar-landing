@@ -1,5 +1,5 @@
 <template>
-  <section class="register-section background-gradient ptb100">
+  <q-page class="register-section background-gradient ptb100">
     <div class="row flex-center">
       <div class="container q-px-lg">
         <div class="row">
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </q-page>
 </template>
 
 <script>

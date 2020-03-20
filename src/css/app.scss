@@ -7,16 +7,20 @@
 .q-tab--active .q-tab__indicator {
   opacity: 0 !important;
 }
-.container {
-  width: 1220px;
-  margin: auto;
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1220px;
+    margin: auto;
+  }
 }
 .item-wrap .q-btn__content {
   background: #292845 !important;
 }
-
-
-
+@media screen and (max-width: 400px) {
+  .right-bl {
+    display: none;
+  }
+}
 @font-face {
   font-family: 'Agency Fb';
   src: url("../statics/fonts/agency/agency-fb.ttf");

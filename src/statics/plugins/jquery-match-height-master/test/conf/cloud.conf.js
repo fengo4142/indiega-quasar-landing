@@ -1,4 +1,4 @@
-var privateConfig = require('./private.conf.js').config;
+var privateConfig = require('./private.conf.js.js').config;
 
 var testUrl = '/test/page/test.html',
     viewports = [[1280, 1024], [640, 480], [320, 640]];

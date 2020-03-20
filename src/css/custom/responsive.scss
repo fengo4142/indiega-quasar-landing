@@ -154,7 +154,19 @@
   .vm-sm {
     vertical-align: middle;
     text-align: right; } }
-
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 100% !important; 
+  }
+  .tm-tabs .tab-content .tab-info {
+    padding: 60px 20px !important;
+  }
+}
+@media (max-width: 401px) and (min-width: 500px) {
+  .container {
+    max-width: 400px !important; 
+  }
+}
 @media screen and (max-width: 767px) {
   /* Post page */
   .post-quote blockquote:before {
